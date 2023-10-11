@@ -13,11 +13,11 @@ namespace CollectionsDemo
                 Console.WriteLine(item);
             }
             Console.WriteLine("-------------------------");
-            Array.Reverse(arr);
-            foreach (var item in arr)
-            {
-                Console.WriteLine(item);
-            }
+            //Array.Reverse(arr);
+            //foreach (var item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             //Array.Sort(arr);//default----in ascending order
             //foreach (var item in arr)
@@ -58,7 +58,11 @@ namespace CollectionsDemo
             //}
             //Console.WriteLine("----------------");
 
-            var arr1 = (int)arr.Clone();
+            int[] arr1 = (int[])arr.Clone();
+            foreach (var item in arr1) 
+            { 
+                Console.WriteLine(item);
+            }
 
 
             //string[] names = new string[] { "Sumit", "Babita", "Zeeshan", "Amita", "Ankita", "Sunita" };
